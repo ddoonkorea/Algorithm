@@ -9,11 +9,9 @@ int main(void) {
     scanf("%[^\n]s", str);
     len = strlen(str);
 
-    if (len == 1) {
-        if (str[i] == ' ') {
-            printf("0\n");
-            return 0;
-        }
+    if (len == 0 || (len == 1 && str[i] == ' ')) {
+        printf("0\n");
+        return 0;
     }
 
     for (i = 1; i<len-1; i++) {
